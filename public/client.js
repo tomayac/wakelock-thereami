@@ -1,4 +1,9 @@
 (() => {
+  // Redirect to HTTPS  
+  if (window.location.protocol !== 'https:') {
+    window.location.protocol = 'https:';
+  }
+  
   const ul = document.querySelector('ul');
   
   const getBgColor = (userAgent) => {
